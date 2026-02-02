@@ -1,0 +1,203 @@
+* {
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  width: 100%;
+
+  background: linear-gradient(130deg, black, #07006d);
+
+  display: flex;
+
+  justify-content: center;
+
+  overflow: hidden;
+
+  align-items: center;
+}
+
+.firstsec {
+  position: relative; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  flex-direction: column;
+  width: 800px;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.inp {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.border-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; 
+}
+
+.border-path {
+  fill: none;
+  stroke: white;
+  stroke-width: 3;
+}
+#Task-not-complt {
+  display: flex;
+  flex-direction: column; 
+  width: 100%;
+  padding: 0 30px;
+}
+
+.Pending {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 15px;
+  border: 2px solid white;
+  border-radius: 15px;
+  width: 100%; 
+  align-self: center; 
+}
+
+.delbtn {
+  padding: 5px;
+  background-color: red;
+  border-radius: 5px;
+}
+#Task-complt {
+  display: flex;
+  flex-direction: column; 
+  width: 100%; 
+  padding: 0 30px; 
+}
+
+
+.complt-task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 15px;
+  border: 2px solid white;
+  border-radius: 15px;
+  width: 90%; 
+  align-self: center; 
+}
+
+.complt-task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 15px;
+  border: 2px solid white;
+  border-radius: 15px;
+  width: 100%;
+}
+
+
+.inp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%; 
+  margin: 20px auto; 
+  gap: 10px; 
+}
+
+#task-inp {
+  flex-grow: 1; 
+  padding: 12px 20px;
+  border-radius: 50px; 
+  border: 2px solid rgba(255, 255, 255, 0.3); 
+  background: rgba(255, 255, 255, 0.1); 
+  color: white;
+  font-size: 1rem;
+  outline: none; 
+  transition: all 0.3s ease;
+}
+
+
+#task-inp:focus {
+  border-color: #4facfe; 
+  background: rgba(0, 0, 0, 0.5); 
+  box-shadow: 0 0 15px rgba(79, 172, 254, 0.5);
+}
+
+/* Placeholder Text Color */
+#task-inp::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+
+#add-btn {
+  padding: 12px 30px;
+  border-radius: 50px;
+  border: none;
+  background: linear-gradient(
+    45deg,
+    white,
+    #0575e6
+  ); 
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+#add-btn:hover {
+  transform: translateY(-2px); 
+  box-shadow: 0 5px 15px rgba(5, 117, 230, 0.6); 
+}
+
+
+#add-btn:active {
+  transform: scale(0.95); 
+}
+
+.onwan,
+.inp {
+  flex-shrink: 0; 
+}
+
+.tasks-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+  flex-direction: column;
+  overflow-y: auto; 
+  flex-grow: 1; 
+  padding-bottom: 20px; 
+  scrollbar-width: thin; 
+  scrollbar-color: white transparent; 
+  overflow-x: hidden;
+  padding-top: 10px;
+}
+.tasks-container::-webkit-scrollbar {
+  width: 8px;
+}
+.tasks-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+.tasks-container::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+}

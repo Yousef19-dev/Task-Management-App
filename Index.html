@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasks</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="content vh-100">
+      <div class="firstsec" id="firstsec">
+        <!-- SVG Border -->
+        <svg
+          class="border-svg"
+          viewBox="0 0 600 500"
+          preserveAspectRatio="none"
+        >
+          <rect class="border-path" width="600" height="500" rx="20" ry="20" />
+        </svg>
+        <h1 class="onwan">My Tasks</h1>
+        <div class="inp">
+          <input
+            type="text"
+            id="task-inp"
+            placeholder="What needs to be done?"
+            autocomplete="off"
+          />
+          <button id="add-btn">
+            Add a task
+          </button>
+        </div>
+        <div class="tasks-container">
+
+        <h3>Pending Tasks</h3>
+        <ul id="Task-not-complt" class="list-unstyled list"></ul>
+
+        <h3>Completed Tasks</h3>
+        <ul id="Task-complt"></ul>
+        
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
