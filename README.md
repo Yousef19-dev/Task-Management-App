@@ -2,7 +2,8 @@
 
 A responsive, high-performance task management application built with Vanilla JavaScript. This project features a custom-built "Sync Slide" animation system that handles complex DOM transitions seamlessly without relying on heavy frameworks.
 
-![Application Demo](path/to/your-demo.gif)
+![Task management app](https://github.com/user-attachments/assets/fc749e6b-60d4-4223-bf85-e92cc0111f19)
+
 
 ## ✨ Key Features
 
@@ -18,7 +19,7 @@ A responsive, high-performance task management application built with Vanilla Ja
 
 * **Core:** HTML5, CSS3, JavaScript (ES6+)
 * **Animation:** [GSAP](https://greensock.com/gsap/) (GreenSock Animation Platform)
-* **Styling:** Bootstrap 5 (Grid/Utilities) + Custom CSS
+* **Styling:** Custom CSS
 * **Icons:** Lucide Icons (SVG)
 
 ## 🧠 Logic & Architecture
